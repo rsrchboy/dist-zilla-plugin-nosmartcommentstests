@@ -1,0 +1,5 @@
+Changes for Dist::Zilla::Plugin::NoSmartCommentsTests
+
+{{$NEXT}}
+    * Initial release
+
