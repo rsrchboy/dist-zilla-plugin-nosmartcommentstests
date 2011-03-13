@@ -1,5 +1,8 @@
 Changes for Dist::Zilla::Plugin::NoSmartCommentsTests
 
 {{$NEXT}}
+    * Metadata update
+
+0.001     2011-03-13 16:09:56 America/Los_Angeles
     * Initial release
 
