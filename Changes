@@ -1,6 +1,10 @@
 Changes for Dist::Zilla::Plugin::NoSmartCommentsTests
 
 {{$NEXT}}
+    * AutoPrereqs wasn't picking up Module::ScanDeps -- so require it
+      manually
+
+0.002     2011-03-13 16:16:29 America/Los_Angeles
     * Metadata update
 
 0.001     2011-03-13 16:09:56 America/Los_Angeles
