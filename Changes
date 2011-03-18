@@ -1,6 +1,11 @@
 Changes for Dist::Zilla::Plugin::NoSmartCommentsTests
 
 {{$NEXT}}
+
+0.004     2011-03-17 21:14:33 America/Los_Angeles
+    * Switch to Test::NoSmartComments
+
+0.003
     * AutoPrereqs wasn't picking up Module::ScanDeps -- so require it
       manually
 
