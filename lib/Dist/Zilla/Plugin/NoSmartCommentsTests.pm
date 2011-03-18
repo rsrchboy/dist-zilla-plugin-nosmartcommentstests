@@ -33,19 +33,11 @@ use strict;
 use warnings;
 
 use Test::More;
-use Module::ScanDeps;
-use ExtUtils::Manifest qw( maniread );
 
-my $manifest = maniread();
-my @files = grep m!^lib/.*\.pm$!, keys %$manifest;
-plan tests => scalar @files;
+eval "use Test::NoSmartComments";
+plan skip_all => 'Test::NoSmartComments required for checking comment IQ'
+    if $@;
 
-for my $file (@files) {
-
-    my $href = scan_deps(files => [ $file ], recurse => 0);
-
-    ### $href
-    is exists $href->{'Smart/Comments.pm'} => q{}, "$file w/o Smart::Comments";
-}
+no_smart_comments_in_all();
 
 1;
