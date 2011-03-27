@@ -32,7 +32,7 @@ ___[ xt/release/no-smart-comments.t ]___
 use strict;
 use warnings;
 
-use Test::More;
+use Test::More 0.88;
 
 eval "use Test::NoSmartComments";
 plan skip_all => 'Test::NoSmartComments required for checking comment IQ'
@@ -40,4 +40,4 @@ plan skip_all => 'Test::NoSmartComments required for checking comment IQ'
 
 no_smart_comments_in_all();
 
-1;
+done_testing();
