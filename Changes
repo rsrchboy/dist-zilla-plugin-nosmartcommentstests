@@ -2,6 +2,9 @@ Changes for Dist::Zilla::Plugin::NoSmartCommentsTests
 
 {{$NEXT}}
 
+0.005     2011-03-27 07:56:00 America/Los_Angeles
+    * Add done_testing() to the end of our generated .t
+
 0.004     2011-03-17 21:14:33 America/Los_Angeles
     * Switch to Test::NoSmartComments
 
