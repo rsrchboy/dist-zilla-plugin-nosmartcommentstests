@@ -62,5 +62,6 @@ plan skip_all => 'Test::NoSmartComments required for checking comment IQ'
     if $@;
 
 no_smart_comments_in_all();
+no_smart_comments_in_tests();
 
 done_testing();
