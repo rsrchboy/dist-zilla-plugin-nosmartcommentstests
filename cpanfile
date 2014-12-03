@@ -1,5 +1,6 @@
 requires "Dist::Zilla::Plugin::InlineFiles" => "0";
 requires "Moose" => "0";
+requires "Test::NoSmartComments" => "0.005";
 requires "namespace::autoclean" => "0";
 requires "perl" => "5.006";
 

@@ -2,6 +2,9 @@ Changes for Dist::Zilla::Plugin::NoSmartCommentsTests
 
 {{$NEXT}}
 
+0.007     2014-12-02 19:51:38 PST-0800
+    * check t/*.t, too.
+
 0.006     2011-04-24 16:10:00 America/Los_Angeles
     * Update POD
 
