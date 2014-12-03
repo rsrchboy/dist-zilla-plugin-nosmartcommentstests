@@ -1,7 +1,5 @@
 Changes for Dist::Zilla::Plugin::NoSmartCommentsTests
 
-{{$NEXT}}
-
 0.007     2014-12-02 19:51:38 PST-0800
     * check t/*.t, too.
 

@@ -9,7 +9,16 @@
 #   The GNU Lesser General Public License, Version 2.1, February 1999
 #
 
-use Test::More tests => 1;
+use strict;
+use warnings;
 
-BEGIN { use_ok 'Dist::Zilla::Plugin::NoSmartCommentsTests' }
-diag("Testing Dist::Zilla::Plugin::NoSmartCommentsTests $Dist::Zilla::Plugin::NoSmartCommentsTests::VERSION, Perl $], $^X");
+use Test::More 0.88;
+
+eval "use Test::NoSmartComments";
+plan skip_all => 'Test::NoSmartComments required for checking comment IQ'
+    if $@;
+
+no_smart_comments_in_all();
+no_smart_comments_in_tests();
+
+done_testing();
