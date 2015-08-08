@@ -61,19 +61,6 @@ ensure that Smart::Comment is not used by any file checked.
 Smart::Comments
 Test::NoSmartComments
 
-=head1 BUGS
-
-All complex software has bugs lurking in it, and this module is no exception.
-
-Please report any bugs to
-"bug-dist-zilla-plugin-nosmartcommentstests@rt.cpan.org", or through the web
-interface at <http://rt.cpan.org>.
-
-Patches and pull requests through GitHub are most welcome; our page and repo
-(same URI):
-
-    https://github.com/RsrchBoy/dist-zilla-plugin-nosmartcommentstests
-
 =cut
 
 __DATA__

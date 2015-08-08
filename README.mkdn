@@ -8,7 +8,7 @@ Dist::Zilla::Plugin::NoSmartCommentsTests - Make sure no Smart::Comments escape 
 
 # VERSION
 
-This document describes version 0.008 of Dist::Zilla::Plugin::NoSmartCommentsTests - released August 07, 2015 as part of Dist-Zilla-Plugin-NoSmartCommentsTests.
+This document describes version 0.009 of Dist::Zilla::Plugin::NoSmartCommentsTests - released August 07, 2015 as part of Dist-Zilla-Plugin-NoSmartCommentsTests.
 
 # SYNOPSIS
 
@@ -27,19 +27,6 @@ following file:
 The name of this plugin has turned out to be somewhat misleading, I'm afraid:
 we don't actually test for the \_existance\_ of smart comments, rather we
 ensure that Smart::Comment is not used by any file checked.
-
-# BUGS
-
-All complex software has bugs lurking in it, and this module is no exception.
-
-Please report any bugs to
-"bug-dist-zilla-plugin-nosmartcommentstests@rt.cpan.org", or through the web
-interface at <http://rt.cpan.org>.
-
-Patches and pull requests through GitHub are most welcome; our page and repo
-(same URI):
-
-    https://github.com/RsrchBoy/dist-zilla-plugin-nosmartcommentstests
 
 # SEE ALSO
 
