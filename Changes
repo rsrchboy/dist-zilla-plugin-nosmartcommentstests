@@ -2,6 +2,11 @@ Changes for Dist::Zilla::Plugin::NoSmartCommentsTests
 
 {{$NEXT}}
 
+0.008-TRIAL  2015-08-07 18:32:43 PDT-0700
+	* Switch over to using FileFinders rather than Test::NoSmartComments' own
+	  file finding functionality.
+	* Add a shim Test::NoSmartComments plugin
+
 0.007     2014-12-02 19:51:38 PST-0800
     * check t/*.t, too.
 
