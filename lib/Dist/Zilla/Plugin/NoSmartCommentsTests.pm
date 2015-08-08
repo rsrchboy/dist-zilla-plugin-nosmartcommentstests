@@ -8,13 +8,12 @@ use namespace::autoclean;
 extends 'Dist::Zilla::Plugin::InlineFiles';
 
 __PACKAGE__->meta->make_immutable;
-1;
+!!42;
 
 =head1 SYNOPSIS
 
-In C<dist.ini>:
-
-    [NoSmartCommentsTests]
+    ; In C<dist.ini>:
+    [Test::NoSmartComments]
 
 =head1 DESCRIPTION
 
@@ -31,7 +30,8 @@ ensure that Smart::Comment is not used by any file checked.
 
 =head1 SEE ALSO
 
-L<Smart::Comments>, L<Test::NoSmartComments>
+Smart::Comments
+Test::NoSmartComments
 
 =head1 BUGS
 
