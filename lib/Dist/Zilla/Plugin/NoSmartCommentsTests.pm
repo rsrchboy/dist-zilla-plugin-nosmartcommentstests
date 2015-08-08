@@ -4,8 +4,36 @@ package Dist::Zilla::Plugin::NoSmartCommentsTests;
 
 use Moose;
 use namespace::autoclean;
+use MooseX::AttributeShortcuts;
+
+use autobox::Core;
 
 extends 'Dist::Zilla::Plugin::InlineFiles';
+
+with
+    'Dist::Zilla::Role::FileFinderUser' => {
+        default_finders => [qw { :InstallModules :ExecFiles :TestFiles }],
+    },
+    'Dist::Zilla::Role::TextTemplate',
+    ;
+
+around merged_section_data => sub {
+    my ($orig, $self) = (shift, shift);
+
+    ### invoke the original to get the sections...
+    my $data = $self->$orig(@_);
+
+    ### bail if no data...
+    return unless $data;
+
+    ### munge each section with our template engine...
+    my %stash = ( files => [ map { $_->name } $self->found_files->flatten ] );
+    do { $data->{$_} = \( $self->fill_in_string(${$data->{$_}}, { %stash }) ) }
+        for $data->keys;
+
+    ### $data
+    return $data;
+};
 
 __PACKAGE__->meta->make_immutable;
 !!42;
@@ -61,7 +89,5 @@ eval "use Test::NoSmartComments";
 plan skip_all => 'Test::NoSmartComments required for checking comment IQ'
     if $@;
 
-no_smart_comments_in_all();
-no_smart_comments_in_tests();
-
+{{ foreach my $file (@files) { $OUT .= qq{no_smart_comments_in("$file");\n} } }}
 done_testing();
