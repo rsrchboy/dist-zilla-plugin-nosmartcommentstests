@@ -18,6 +18,13 @@ with
     'Dist::Zilla::Role::PrereqSource',
     ;
 
+=method register_prereqs
+
+Registers a 'develop' phase requirement for L<Test::NoSmartComments> with the
+L<Dist::Zilla> object.
+
+=cut
+
 sub register_prereqs {
     my $self = shift @_;
 
