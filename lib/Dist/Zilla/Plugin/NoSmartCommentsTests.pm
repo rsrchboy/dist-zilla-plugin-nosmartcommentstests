@@ -15,7 +15,19 @@ with
         default_finders => [qw { :InstallModules :ExecFiles :TestFiles }],
     },
     'Dist::Zilla::Role::TextTemplate',
+    'Dist::Zilla::Role::PrereqSource',
     ;
+
+sub register_prereqs {
+    my $self = shift @_;
+
+    $self->zilla->register_prereqs(
+        { phase => 'develop' },
+        'Test::NoSmartComments' => 0,
+    );
+
+    return;
+}
 
 around merged_section_data => sub {
     my ($orig, $self) = (shift, shift);
