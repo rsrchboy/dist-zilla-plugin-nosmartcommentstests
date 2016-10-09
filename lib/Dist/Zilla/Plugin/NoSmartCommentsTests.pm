@@ -59,6 +59,7 @@ ensure that Smart::Comment is not used by any file checked.
 =head1 SEE ALSO
 
 Smart::Comments
+
 Test::NoSmartComments
 
 =cut
