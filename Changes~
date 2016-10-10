@@ -1,8 +1,6 @@
 Changes for Dist::Zilla::Plugin::NoSmartCommentsTests
 
-0.009     2016-10-09 19:05:49 CDT-0500
-	* Add Test::NoSmartComments as a develop requires on a generated
-	  distribution.
+{{$NEXT}}
 
 0.008-TRIAL  2015-08-07 18:32:43 PDT-0700
 	* Switch over to using FileFinders rather than Test::NoSmartComments' own
