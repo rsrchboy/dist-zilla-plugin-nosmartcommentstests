@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/RsrchBoy/dist-zilla-plugin-nosmartcommentstests.svg?branch=master)](https://travis-ci.org/RsrchBoy/dist-zilla-plugin-nosmartcommentstests)
 [![Kwalitee status](http://cpants.cpanauthors.org/dist/Dist-Zilla-Plugin-NoSmartCommentsTests.png)](http://cpants.charsbar.org/dist/overview/Dist-Zilla-Plugin-NoSmartCommentsTests)
-[![Coverage Status](https://coveralls.io/repos/RsrchBoy/dist-zilla-plugin-nosmartcommentstests/badge.png?branch=master)](https://coveralls.io/r/RsrchBoy/dist-zilla-plugin-nosmartcommentstests?branch=master)
+[![Coverage Status](https://coveralls.io/repos/RsrchBoy/dist-zilla-plugin-nosmartcommentstests/badge.svg?branch=master)](https://coveralls.io/r/RsrchBoy/dist-zilla-plugin-nosmartcommentstests?branch=master)
 
 # NAME
 
@@ -8,7 +8,7 @@ Dist::Zilla::Plugin::NoSmartCommentsTests - Make sure no Smart::Comments escape 
 
 # VERSION
 
-This document describes version 0.009 of Dist::Zilla::Plugin::NoSmartCommentsTests - released August 07, 2015 as part of Dist-Zilla-Plugin-NoSmartCommentsTests.
+This document describes version 0.009 of Dist::Zilla::Plugin::NoSmartCommentsTests - released October 09, 2016 as part of Dist-Zilla-Plugin-NoSmartCommentsTests.
 
 # SYNOPSIS
 
@@ -21,6 +21,13 @@ This is an extension of [Dist::Zilla::Plugin::InlineFiles](https://metacpan.org/
 following file:
 
     xt/release/no-smart-comments.t - test to ensure no Smart::Comments
+
+# METHODS
+
+## register\_prereqs
+
+Registers a 'develop' phase requirement for [Test::NoSmartComments](https://metacpan.org/pod/Test::NoSmartComments) with the
+[Dist::Zilla](https://metacpan.org/pod/Dist::Zilla) object.
 
 # NOTE
 
@@ -38,7 +45,7 @@ Please see those modules/websites for more information related to this module.
 # BUGS
 
 Please report any bugs or feature requests on the bugtracker website
-https://github.com/RsrchBoy/dist-zilla-plugin-nosmartcommentstests/issues
+[https://github.com/RsrchBoy/dist-zilla-plugin-nosmartcommentstests/issues](https://github.com/RsrchBoy/dist-zilla-plugin-nosmartcommentstests/issues)
 
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired
